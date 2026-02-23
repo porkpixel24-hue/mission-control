@@ -34,6 +34,9 @@ export default function SideTabs() {
         >
           Brain → Muscles
         </Link>
+        <Link href="/team" className={tabClass(pathname === "/team")}>
+          Team Bindings
+        </Link>
 
         <Section title="Vault" />
         <Link href="/vault" className={tabClass(pathname === "/vault")}>
