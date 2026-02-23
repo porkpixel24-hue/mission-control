@@ -40,49 +40,49 @@ const metaAuditAccounts = ["Pork Pixel", "FLS Auction"];
 
 const agentTeam = [
   {
-    name: "Jasper Prime",
-    role: "Delegator / Orchestrator",
+    name: "President Skroob",
+    role: "Delegator / Orchestrator (Spaceballs Command)",
     focus: "Priority setting, routing, QA gate, approval packaging",
     muscles: ["Strategy", "Prioritization", "Delegation", "Quality control"],
     skills: ["Sprint planning", "Task routing", "KPI checkpoints", "Final QA"],
   },
   {
-    name: "Competitor Intel Lead",
+    name: "Barf",
     role: "Research Pod",
-    focus: "Meta Ad Library competitor extraction + hook/funnel intelligence",
+    focus: "Competitor extraction + hook/funnel intelligence",
     muscles: ["Research", "Pattern detection", "Intel synthesis", "Gap mapping"],
     skills: ["Ad library mining", "Hook extraction", "Offer clustering", "Funnel analysis"],
   },
   {
-    name: "Offer Strategist",
+    name: "Yogurt",
     role: "Offer Pod",
     focus: "Cross-examine market offers vs Pork Pixel offers/PDFs",
     muscles: ["Positioning", "Packaging", "Value ladder", "Offer clarity"],
     skills: ["Offer gap matrix", "Lead magnet fit", "Pricing narrative", "Objection mapping"],
   },
   {
-    name: "Funnel/Message Architect",
+    name: "Dot Matrix",
     role: "Messaging Pod",
     focus: "Ad/LP/email messaging system by funnel stage",
     muscles: ["Messaging architecture", "Funnel logic", "CTA sequencing", "Conversion UX"],
     skills: ["TOF-MOF-BOF messaging", "Landing page sections", "Email/SMS flows", "Script framing"],
   },
   {
-    name: "Creative Lab",
+    name: "Lone Starr",
     role: "Creative Pod",
     focus: "Concept and creative variant production cadence",
     muscles: ["Concepting", "Creative iteration", "Visual testing", "Hook variation"],
     skills: ["UGC concepts", "Static variants", "Shot lists", "Overlay systems"],
   },
   {
-    name: "Meta Operator",
+    name: "Colonel Sandurz",
     role: "Execution Pod",
     focus: "Draft campaign setup for Pork Pixel + FLS Auction",
     muscles: ["Campaign architecture", "Budget controls", "Adset hygiene", "Launch readiness"],
     skills: ["Draft builds", "Audience exclusions", "Naming standards", "Test matrix setup"],
   },
   {
-    name: "Tracking & Signal Engineer",
+    name: "Dark Helmet",
     role: "Signal Pod",
     focus: "Pixel/CAPI/event quality and measurement integrity",
     muscles: ["Attribution", "Data quality", "Event architecture", "Signal validation"],
@@ -91,11 +91,11 @@ const agentTeam = [
 ];
 
 const handoffFlow = [
-  "Competitor Intel Lead",
-  "Offer Strategist",
-  "Funnel/Message Architect + Creative Lab",
-  "Meta Operator + Tracking & Signal Engineer",
-  "Jasper Prime QA + approval package",
+  "Barf",
+  "Yogurt",
+  "Dot Matrix + Lone Starr",
+  "Colonel Sandurz + Dark Helmet",
+  "President Skroob QA + approval package",
 ];
 
 async function getWeather(location: string): Promise<WeatherSnapshot | null> {
@@ -266,7 +266,7 @@ export default async function Home({
               <div className="mt-6 flex flex-col items-center">
                 <details open className="w-full max-w-md rounded-xl border border-emerald-500/40 bg-emerald-500/10 p-4 shadow-lg shadow-emerald-900/20">
                   <summary className="cursor-pointer list-none">
-                    <p className="font-semibold text-emerald-200">🧠 Jasper Prime — Chief of Staff (Brain)</p>
+                    <p className="font-semibold text-emerald-200">🧠 President Skroob — Delegator (Brain)</p>
                     <p className="mt-1 text-xs text-emerald-300/90">Strategy • Priorities • Accountability • Orchestration</p>
                   </summary>
                   <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-200">
@@ -281,7 +281,7 @@ export default async function Home({
 
                 <div className="grid w-full gap-4 md:grid-cols-2 xl:grid-cols-4">
                   {agentTeam
-                    .filter((a) => a.name !== "Jasper Prime")
+                    .filter((a) => a.name !== "President Skroob")
                     .map((a) => (
                       <div key={a.name} className="flex flex-col items-center">
                         <div className="h-4 w-px bg-zinc-700" />
@@ -345,7 +345,7 @@ export default async function Home({
 
             <section className="mb-6 rounded-xl border border-zinc-800 bg-zinc-900 p-5">
               <div className="mb-3 flex items-center justify-between">
-                <h2 className="text-lg font-semibold">Agent Team</h2>
+                <h2 className="text-lg font-semibold">Agent Team (Spaceballs Crew)</h2>
                 <span className="text-xs text-zinc-400">Specialist Pods</span>
               </div>
               <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
