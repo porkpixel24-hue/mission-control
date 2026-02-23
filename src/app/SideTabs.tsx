@@ -54,6 +54,9 @@ export default function SideTabs() {
         <Link href="/vault/reports" className={tabClass(pathname === "/vault/reports")}>
           Reports
         </Link>
+        <Link href="/vault/biweekly" className={tabClass(pathname === "/vault/biweekly")}>
+          Biweekly + Archive
+        </Link>
 
         <Section title="Signals" />
         <Link href="/creators" className={tabClass(pathname === "/creators")}>
