@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import SideTabs from "./SideTabs";
 
@@ -29,7 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="min-h-screen bg-zinc-950 text-zinc-100 lg:flex">
-          <SideTabs />
+          <Suspense fallback={<aside className="w-72 shrink-0 border-r border-zinc-800 bg-zinc-950/80 p-4" />}>
+            <SideTabs />
+          </Suspense>
           <div className="min-w-0 flex-1">{children}</div>
         </div>
       </body>

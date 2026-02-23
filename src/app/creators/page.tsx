@@ -70,7 +70,7 @@ export default function CreatorsPage() {
       ) : null}
 
       <section className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-        {(rows.length ? rows : creatorHandles.map((h) => ({ handle: h, tweets: [] }))).map((row) => (
+        {(rows.length ? rows : creatorHandles.map((h) => ({ handle: h, tweets: [], error: undefined }))).map((row) => (
           <article key={row.handle} className="rounded-xl border border-zinc-800 bg-zinc-900 p-4">
             <p className="text-lg font-semibold">@{row.handle}</p>
             <div className="mt-2 flex gap-2 text-xs">
